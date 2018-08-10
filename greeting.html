@@ -17,13 +17,23 @@
            return (
              <div>
                <h1>Hello World!</h1>
+
              </div>
            );
          }
        }
-
+       class Exit extends React.Component {
+         render() {
+           return (
+             <div>
+               <h1>Goodbye!</h1>
+               <Greeting />
+             </div>
+           );
+         }
+       }
        ReactDOM.render(
-         <Greeting />, document.getElementById('app')
+         <Exit />, document.getElementById('app')
        );
     </script>
   </body>
