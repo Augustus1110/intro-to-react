@@ -13,10 +13,19 @@
 
     <script type="text/babel">
        class Greeting extends React.Component {
+         constructor(props) {
+           super(props)
+           this.state = {
+             fruit: "apples"
+           }
+         }
+
          render() {
            return (
              <div>
                <h1>Hello {this.props.name}!</h1>
+               <h1>Eat {this.state.fruit}!</h1>
+
              </div>
            );
          }
